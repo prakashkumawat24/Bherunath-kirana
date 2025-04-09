@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bherunath Kirana Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    main {
+      padding: 20px;
+    }
+    .contact, .products, .note, .order-form, .payment {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #007b5e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #005f47;
+    }
+    .payment img {
+      max-width: 250px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+    .upi-id {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Bherunath Logo">
+    <h1>Bherunath Kirana Store</h1>
+  </header>
+  <main>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Mobile: 8000046470</p>
+    </section>
+
+    <section class="products">
+      <h2>Available Products</h2>
+      <ul>
+        <li>Sopari</li>
+        <li>Baghwan</li>
+        <li>Parcel Siddhant</li>
+        <li>Bidi</li>
+        <li>Oil</li>
+        <li>Sugar</li>
+        <li>Ghee</li>
+        <li>Toor Dal</li>
+        <li>Rice</li>
+        <li>Spices</li>
+        <li>Biscuits</li>
+        <li>Snacks</li>
+        <li>Soap</li>
+        <li>Shampoo</li>
+        <li>Detergent Powder</li>
+        <li>Toothpaste</li>
+        <li>Bath Items</li>
+        <li>Tea Leaves</li>
+        <li>Coffee</li>
+        <li>Cold Drinks</li>
+        <li>Atta</li>
+      </ul>
+    </section>
+
+    <section class="order-form">
+      <h2>Place Your Order (Ghar Se!)</h2>
+      <form action="https://formsubmit.co/8000046470" method="POST">
+        <input type="text" name="name" placeholder="Aapka Naam" required>
+        <input type="text" name="mobile" placeholder="Mobile Number" required>
+        <textarea name="order" rows="6" placeholder="Saman ki list yahan likho..." required></textarea>
+        <button type="submit">Order Bhejo</button>
+      </form>
+      <p style="font-size: 14px; color: #666;">Note: Yeh order sirf aapki list bhejne ke liye hai. Payment aur saman lene ke liye dukaan par aana hoga.</p>
+    </section>
+
+    <section class="payment">
+      <h2>Pay Online (PhonePe / UPI)</h2>
+      <img src="payment-qr.jpg" alt="PhonePe QR Code">
+      <div class="upi-id">UPI ID: Q557368850@ybl</div>
+    </section>
+
+    <section class="note">
+      <h2>Note</h2>
+      <p>This website is for information and order-list sharing only. Please visit the store for final purchase and pickup.</p>
+    </section>
+  </main>
+</body>
+</html>
